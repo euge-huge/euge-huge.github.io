@@ -35,7 +35,7 @@ select option {
             1. search 
 -------------------------------*/
 .search {
-  background-color: #1ba9e5;
+  background-color: #0171bb;
   padding-right: 16px;
   padding-left: 16px;
   padding-top: 12px;
@@ -294,7 +294,8 @@ select option {
   left: 0px;
   width: 580px;
   height: 290px !important;
-  opacity: 0.77; }
+  
+  : 0.77; }
 
 .search.with-time .date-picker-wrapper .drp_top-bar {
   height: 340px !important; }
