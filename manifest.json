@@ -1,0 +1,14 @@
+{
+  "name": "Eugene Bystrov - frontend developer",
+  "short_name": "Eugene Bystrov",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/icon"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
