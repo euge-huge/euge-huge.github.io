@@ -8,6 +8,7 @@
 body {
     font-family: Calibri, sans-serif;
     font-size: 10px;
+    overflow-x: hidden;
 }
 
 /* Common Styles */
