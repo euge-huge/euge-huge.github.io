@@ -9,6 +9,8 @@ body {
     font-family: Calibri, sans-serif;
     font-size: 10px;
     overflow-x: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 
 /* Common Styles */
