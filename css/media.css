@@ -1,0 +1,107 @@
+@media screen and (max-width: 1240px) {
+    .footer-content {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .competences-sides {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sides-full {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sides-stack {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        font-size: 9px;
+    }
+
+    .about-me-info {
+        flex-direction: column;
+    }
+
+    .info-image {
+        margin: 0 auto;
+    }
+
+    .info-description {
+        margin: 40px auto 0 auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .contacts-sides {
+        flex-direction: column;
+    }
+
+    .slider-page {
+        padding: 10px 2px;
+    }
+
+    .slider-page-content {
+        margin-top: 5px;
+    }
+
+
+    .sides-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sides-social {
+        width: 70%;
+        margin: 40px auto 0 auto;
+    }
+
+    .sides-social h3 {
+        margin-bottom: 30px;
+    }
+
+    .social-string {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .nav li {
+        padding: 0 5px;
+    }
+
+    .footer-content {
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .footer-rights {
+        width: 100%;
+    }
+
+    .footer-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-follow {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
