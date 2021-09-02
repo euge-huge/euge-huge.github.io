@@ -6,13 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // АЛГОРИТМ
     const isLetters = (value) => {
-        return /^([a-zа-яё]+)$/i.test(value);
+        for (let char of value) {
+            if (char.toLowerCase() == char.toUpperCase()) return false;
+        }
+        return true;
     }
     // 
 
     button.addEventListener('click', () => {
         if (!input.value) {
             result.innerHTML = "Пустая строка"
+            result.classList.remove('false');
+            result.classList.remove('true');
             return;
         }
 
