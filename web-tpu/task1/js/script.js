@@ -6,8 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const falseResult = document.getElementById('false');
 
     // АЛГОРИТМ
-    const isIsogram = (value) => {
-        return !/(\w).*\1/i.test(value);
+    const isIsogram = (str) => {
+        for(let i = 0; i <= str.length; i++) {
+            for(let j = i+1; j <= str.length; j++) {
+                if(str[j] == str[i]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
     // 
 
