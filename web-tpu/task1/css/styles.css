@@ -9,6 +9,15 @@ body {
     position: relative;
 }
 
+.button-back {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 1.4rem;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+
 .card {
     width: 70%;
     position: absolute;
