@@ -35,6 +35,11 @@ body {
     font-size: 1.8rem;
 }
 
+.input-group {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .num-input {
     font-size: 1.8rem;
 }
