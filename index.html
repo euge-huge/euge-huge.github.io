@@ -1,450 +1,487 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="/favicon.ico" />
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
 
-  <title>Eugene Bystrov - frontend developer</title>
+    <title>Евгений Быстров – Креативный Frontend Разработчик</title>
 
-  <link rel='stylesheet' href='./css/slick.css'>
-  <link rel='stylesheet' href='./css/slick-theme.css'>
-  <link rel='stylesheet' href='./css/index.css'>
-  <link rel='stylesheet' href='./css/media.css'>
-</head>
-<body>
-<div class='navigation'>
-  <nav>
-    <ul class='nav'>
-      <li><a  class='nav-link' id='about-link' href=''>About me</a></li>
-      <li><a  class='nav-link' id='competences-link' href=''>Competences</a></li>
-      <li><a  class='nav-link' id='portfolio-link' href=''>Portfolio</a></li>
-      <li><a  class='nav-link' id='contacts-link' href=''>Contacts</a></li>
-    </ul>
-  </nav>
-</div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-<div class='main'>
-  <div class='container'>
-    <div class='main-content'>
-      <h1 class='main-welcome'>Hello</h1>
-      <p class='main-subtext'>My name is Eugene Bystrov and I'm frontend developer</p>
+    <!-- Additions -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-      <div class='main-offer'>
-        <p class='main-offer-text'>Swipe down to know more about me</p>
-        <div class='main-offer-button'>
-          ↓
-        </div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <nav class="menu glass">
+      <div class="menu__item">
+        <a href="#about">Обо мне</a>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class='about-me page' id='about'>
-  <div class='container'>
-    <div class='page-content'>
-      <h1 class='page-header'>About me</h1>
-      <p class='page-description'>You can get information about my personality here. It's very important to work with the right person for you =)</p>
-
-      <div class='about-me-info'>
-        <div class='info-image'>
-          <img src='./img/me.jpg' alt='me' width='100%' height='100%'>
-        </div>
-
-        <div class='info-description'>
-          <span class='info-description-name'>Eugene Bystrov</span>
-
-          <div class='info-description-group'>
-            <span class='info-description-span'>Age: </span>
-            <span class='info-description-value'>19 y. o.</span>
-          </div>
-
-          <div class='info-description-group'>
-            <span class='info-description-span'>Live in: </span>
-            <span class='info-description-value'>Tomsk, Russia</span>
-          </div>
-
-          <div class='info-description-group'>
-            <span class='info-description-span'>Education: </span>
-            <span class='info-description-value'>Tomsk Polytechnic University, Tomsk, Russia</span>
-          </div>
-
-          <div class='info-description-group'>
-            <span class='info-description-span'>About: </span>
-            <span class='info-description-value'>Hey! I am very glad that you came to my personal page :3 I live and study to be a programmer in Tomsk. Programming from a hobby has grown for me into something more - something from which I get great pleasure! Front-end development won my heart. I really hope I can be helpful in solving your problem. To understand whether we are suitable for each other, scroll further!</span>
-          </div>
-
-        </div>
+      <div class="menu__item">
+        <a href="#skills">Навыки</a>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class='competences page' id='competences'>
-  <div class='container'>
-    <div class='page-content'>
-      <h1 class='page-header'>Competences</h1>
-      <p class='page-description'>Find out my competencies to see if I can solve your problem =)</p>
-
-      <div class='competences-sides'>
-        <div class='sides-full'>
-          <h2>I can suggest to save your time: </h2>
-
-          <div class='sides-features'>
-            <div class='feature'>
-              <div class='feature-icon'>
-                <object type="image/svg+xml" data="./icons/site.svg" width="100%" height="100%" style='pointer-events: none'>
-                  Your browser does not support SVG
-                </object>
-              </div>
-              <div class='feature-description'>
-                Build a Responsive Website Layout From Scratch
-              </div>
-            </div>
-
-            <div class='feature'>
-              <div class='feature-icon'>
-                <object type="image/svg+xml" data="./icons/edit.svg" width="100%" height="100%" style='pointer-events: none'>
-                  Your browser does not support SVG
-                </object>
-              </div>
-              <div class='feature-description'>
-                Add Various Edits To the Already Finished Site
-              </div>
-            </div>
-
-            <div class='feature'>
-              <div class='feature-icon'>
-                <object type="image/svg+xml" data="./icons/react.svg" width="100%" height="100%" style='pointer-events: none'>
-                  Your browser does not support SVG
-                </object>
-              </div>
-              <div class='feature-description'>
-                Develope a UI Web Application Using React/Vue
-              </div>
-            </div>
-
-            <div class='feature'>
-              <div class='feature-icon'>
-                <object type="image/svg+xml" data="./icons/stack.svg" width="100%" height="100%" style='pointer-events: none'>
-                  Your browser does not support SVG
-                </object>
-              </div>
-              <div class='feature-description'>
-                Develope a Fullstack Solution To Your Problem
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class='sides-stack'>
-          <h2>Stack of thechnologies that I use: </h2>
-
-          <div class='stack'>
-            <div class='stack-string'>
-              <div class='string-background per-90'></div>
-              <span class='stack-string-name'>HTML</span>
-              <span class='stack-string-percent'>90%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-90'></div>
-              <span class='stack-string-name'>CSS</span>
-              <span class='stack-string-percent'>90%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-75'></div>
-              <span class='stack-string-name '>JavaScript (ES6)</span>
-              <span class='stack-string-percent'>75%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-65'></div>
-              <span class='stack-string-name '>React.js + Redux</span>
-              <span class='stack-string-percent'>65%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-50'></div>
-              <span class='stack-string-name '>Node.js, Express.js, MongoDB</span>
-              <span class='stack-string-percent'>50%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-50'></div>
-              <span class='stack-string-name '>Vue.js</span>
-              <span class='stack-string-percent'>50%</span>
-            </div>
-
-            <div class='stack-string'>
-              <div class='string-background per-80'></div>
-              <span class='stack-string-name '>Git, Jira, Trello</span>
-              <span class='stack-string-percent'>80%</span>
-            </div>
-          </div>
-
-        </div>
+      <div class="menu__item">
+        <a href="#portfolio">Мои работы</a>
       </div>
-    </div>
-  </div>
-</div>
+    </nav>
 
-<div class='portfolio page' id='portfolio'>
-  <div class='container'>
-    <div class='page-content'>
-      <h1 class='page-header'>Portfolio</h1>
-      <p class='page-description'>Look at the finished projects =)</p>
+    <header id="header" class="header">
+      <div id="particles-js" class="particles"></div>
 
-      <div class='slider-wrapper'>
-        <div class='slider'>
-          <div class='slider-page'>
-            <h4>World Wide Trip Of Eugene Kovalevski</h4>
-            <div class='slider-page-content'>
-              <div class='slider-image'>
-                <img src='./img/ww-trip.PNG' alt='appSon' width='100%'>
-              </div>
-              <div class='slider-btn-group'>
-                <a class='slider-btn demo-btn' href='http://gps.sibtraveler.com/'>Site</a>
-              </div>
-            </div>
-          </div>
-          <div class='slider-page'>
-            <h4>HTML Landing Built</h4>
-            <div class='slider-page-content'>
-              <div class='slider-image'>
-                <img src='./img/appSon.PNG' alt='appSon' width='100%'>
-              </div>
-              <div class='slider-btn-group'>
-                <a class='slider-btn demo-btn' href='https://euge-huge.github.io/appSon/'>Demo</a>
-                <a class='slider-btn github-btn' href='https://github.com/euge-huge/smartworld_task1'>See Code</a>
-              </div>
-            </div>
-          </div>
-          <div class='slider-page'>
-            <h4>React.js Notes App (MERN fullstack)</h4>
-            <div class='slider-page-content'>
-              <div class='slider-image'>
-                <img src='./img/studentsApp.PNG' alt='studentsApp' width='100%'>
-              </div>
-              <div class='slider-btn-group'>
-                <a class='slider-btn demo-btn' href='https://tpu-students.herokuapp.com/'>Demo</a>
-                <a class='slider-btn github-btn' href='https://github.com/euge-huge/creative-project'>See Code</a>
-              </div>
-            </div>
-          </div>
-          <div class='slider-page'>
-            <h4>Vue.js Notes App</h4>
-            <div class='slider-page-content'>
-              <div class='slider-image'>
-                <img src='./img/todoApp.PNG' alt='studentsApp' width='100%'>
-              </div>
-              <div class='slider-btn-group'>
-                <a class='slider-btn demo-btn' href='https://todo-sworld.herokuapp.com/'>Demo</a>
-                <a class='slider-btn github-btn' href='https://github.com/euge-huge/smartworld_task3'>See Code</a>
-              </div>
-            </div>
-          </div>
-          <div class='slider-page'>
-            <h4>Dynamic JSON Parser (Native JS)</h4>
-            <div class='slider-page-content'>
-              <div class='slider-image'>
-                <img src='./img/jsonParser.PNG' alt='jsonParser' width='100%'>
-              </div>
-              <div class='slider-btn-group'>
-                <a class='slider-btn demo-btn' href='https://euge-huge.github.io/jsonParser/'>Demo</a>
-                <a class='slider-btn github-btn' href='https://github.com/euge-huge/smartworld_task2'>See Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      <div class="header__title">
+        <h1>Евгений Быстров</h1>
+        <h2>Креативный Frontend Разработчик</h2>
 
-<div class='contacts page' id='contacts'>
-  <div class='container'>
-    <div class='page-content'>
-      <h1 class='page-header'>Contacts</h1>
-      <p class='page-description'>Do we fit together? Contact me =)</p>
-
-      <div class='contacts-sides'>
-        <div class='sides-form'>
-          <h3>Using the form (soon): </h3>
-          <form class='form' action='#'>
-
-            <input class='form-input' type='text' placeholder='Enter title...' required>
-
-            <input class='form-input' type='email' placeholder='Enter email to feedback...' required>
-
-            <textarea class='form-input' name='' id='' cols='30' rows='10' placeholder='Enter message...' required></textarea>
-
-            <button class='form-submit-btn btn-disabled' type='submit' disabled>Send (disabled)</button>
-          </form>
-        </div>
-        <div class='sides-social'>
-          <h3>Using the social media: </h3>
-
-          <a class='social-string' href='https://www.instagram.com/bystrovoff/'>
-            <div class='social-icon'>
-              <object type="image/svg+xml" data="./icons/instagram.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-            <div class='social-description'>
-              Instagram
-            </div>
-          </a>
-
-          <a class='social-string' href='http://vk.com/bystroveugene'>
-
-            <div class='social-description'>
-              VKontakte
-            </div>
-            <div class='social-icon'>
-              <object type="image/svg+xml" data="./icons/vk.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-          </a>
-
-          <a class='social-string' href='https://www.facebook.com/eugbys/'>
-            <div class='social-icon'>
-              <object type="image/svg+xml" data="./icons/facebook.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-            <div class='social-description'>
-              Facebook
-            </div>
-          </a>
-
-          <a class='social-string' href='https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE%D0%B2-686975217/'>
-
-            <div class='social-description'>
-              LinkedIn
-            </div>
-            <div class='social-icon'>
-              <object type="image/svg+xml" data="./icons/linkedin.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-          </a>
-        </div>
+        <a href="#contacts" class="button button_small">Связаться</a>
       </div>
 
-    </div>
-  </div>
-</div>
-
-<footer class='footer' id='footer'>
-  <div class='container'>
-    <div class='footer-content'>
-      <div class='footer-rights'>
-        <h3>Rigths Information</h3>
-        <p>
-          All information posted on the site is fully owned by the owner and can be posted on other sources only with the written consent of the author
+      <div class="header__next">
+        <p class="header__next-text">
+          Листай ниже, чтобы узнать больше обо мне
         </p>
-        <p>Eugene Bystrov</p>
-        <p>Tomsk, 2021</p>
+        <a href="#about" class="header__next-arrow glass"> ↓ </a>
       </div>
+    </header>
 
-      <div class='footer-group'>
-        <div class='footer-nav'>
-          <h3>Navigation</h3>
-          <ul>
-            <li><a  class='footer-nav-link' id='footer-about' href=''>About me</a></li>
-            <li><a  class='footer-nav-link' id='footer-competences' href=''>Competences</a></li>
-            <li><a  class='footer-nav-link' id='footer-portfolio' href=''>Portfolio</a></li>
-            <li><a  class='footer-nav-link' id='footer-contacts' href=''>Contacts</a></li>
-          </ul>
-        </div>
+    <section id="about" class="section about">
+      <div class="container section-container">
+        <h3 class="section__title">Обо мне</h3>
 
-        <div class='footer-lang'>
-          <h3>Language</h3>
-          <ul>
-            <li><a  class='footer-lang-link active' href='./'>English</a></li>
-            <li><a  class='footer-lang-link' href='./ru'>Русский</a></li>
-          </ul>
-        </div>
+        <div class="section__content">
+          <img src="./assets/me.jpg" alt="" />
 
-        <div class='footer-contacts'>
-          <h3>Contact me</h3>
+          <div class="about-content__wrapper glass">
+            <h5>Возраст:</h5>
 
-          <div class='footer-contact-string'>
-            <div class='string-icon'>
-              <object type="image/svg+xml" data="./icons/marker.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-            <div class='string-description'>I'm based in Tomsk, Russia.</div>
-          </div>
+            <p class="about-content__text">22 года</p>
 
-          <div class='footer-contact-string'>
-            <div class='string-icon'>
-              <object type="image/svg+xml" data="./icons/email.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-            <div class='string-description'>Email: evgeniy0ctreles@gmail.com</div>
-          </div>
+            <h5>Живу в:</h5>
+            <p class="about-content__text">Томск, Россия</p>
 
-          <div class='footer-contact-string'>
-            <div class='string-icon'>
-              <object type="image/svg+xml" data="./icons/phone.svg" width="100%" height="100%" style='pointer-events: none'>
-                Your browser does not support SVG
-              </object>
-            </div>
-            <div class='string-description'>Call me: +7 (923) 442-92-11</div>
+            <h5>Образование:</h5>
+            <p class="about-content__text">
+              Томский Политехнический Университет
+            </p>
+
+            <h5>Описание:</h5>
+            <p class="about-content__text">
+              Привет! Очень рад, что Вы зашли на мою личную страничку :3 Я живу
+              и работаю в Томске.
+            </p>
+
+            <p class="about-content__text">
+              Фронтенд-разработка - это то, что действительно завладело моим
+              сердцем. Я убежден, что креативность, сочетаемая с техническими
+              навыками, способна создавать удивительные вещи. Моя цель -
+              помогать в создании превосходных пользовательских интерфейсов и
+              эффективных веб-проектов. Давайте вместе превратим вашу идею в
+              реальность!
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
+    <div class="parallax">Программирование - мое творчество, ваше решение</div>
 
+    <section id="skills" class="section skills">
+      <div class="container section-container">
+        <h3 class="section__title">Навыки</h3>
 
-      <div class='footer-follow'>
-        <h3>Follow me</h3>
+        <div class="section__content">
+          <div class="card glass">
+            <h3 class="card__title">Могу предложить и сэкономить Ваше время</h3>
 
-        <div class='footer-follow-description'>
-          To get more information about me or contact me, you can subscribe to my social networks
+            <div class="card__content skills-points">
+              <div class="skills-points__item">
+                <img src="./assets/icons/site.svg" alt="alt" />
+
+                <span>Верстка адаптивных сайтов-лендингов с макета</span>
+              </div>
+
+              <div class="skills-points__item">
+                <img src="./assets/icons/edit.svg" alt="alt" />
+
+                <span>Добавление правок на уже готовый сайт</span>
+              </div>
+
+              <div class="skills-points__item">
+                <img src="./assets/icons/react.svg" alt="alt" />
+
+                <span
+                  >Разработка пользовательских интерфейсов на React/Vue</span
+                >
+              </div>
+
+              <div class="skills-points__item">
+                <img src="./assets/icons/stack.svg" alt="alt" />
+
+                <span>
+                  Разработка комплексного приложения для вашей задачи
+                  (Fullstack)</span
+                >
+              </div>
+
+              <div class="skills-points__item">
+                <img src="./assets/icons/speed.svg" alt="alt" />
+
+                <span>Оптимизация производительности веб-приложений</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div>
+              <h3 class="card__title">Технологии, которые я использую</h3>
+
+              <div class="card__content">
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 100%"></div>
+
+                  <div>HTML</div>
+
+                  <div>100%</div>
+                </div>
+
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 90%"></div>
+
+                  <div>CSS</div>
+
+                  <div>90%</div>
+                </div>
+
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 80%"></div>
+
+                  <div>JavaScript (ES6)</div>
+
+                  <div>80%</div>
+                </div>
+
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 75%"></div>
+
+                  <div>React.js + Redux</div>
+
+                  <div>75%</div>
+                </div>
+
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 60%"></div>
+
+                  <div>Node.js, Express.js, MongoDB</div>
+
+                  <div>60%</div>
+                </div>
+
+                <div class="glass skill-progress">
+                  <div class="skill-progress__bar" style="width: 50%"></div>
+
+                  <div>Vue.js</div>
+
+                  <div>50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class='footer-follow-group'>
-          <a class='follow-link' href='https://www.facebook.com/eugbys/'>
-            <object type="image/svg+xml" data="./icons/facebook.svg" width="100%" height="100%" style='pointer-events: none'>
-              Your browser does not support SVG
-            </object>
-          </a>
-          <a class='follow-link' href='https://www.instagram.com/bystrovoff/'>
-            <object type="image/svg+xml" data="./icons/instagram.svg" width="100%" height="100%" style='pointer-events: none'>
-              Your browser does not support SVG
-            </object>
-          </a>
-          <a class='follow-link' href='http://vk.com/bystroveugene'>
-            <object type="image/svg+xml" data="./icons/vk.svg" width="100%" height="100%" style='pointer-events: none'>
-              Your browser does not support SVG
-            </object>
-          </a>
-          <a class='follow-link' href='https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE%D0%B2-686975217/'>
-            <object type="image/svg+xml" data="./icons/linkedin.svg" width="100%" height="100%" style='pointer-events: none'>
-              Your browser does not support SVG
-            </object>
-          </a>
-        </div>
-
       </div>
+    </section>
 
+    <div class="parallax">
+      От идеи к коду: воплощаем ваши мечты в веб-реальность
     </div>
-  </div>
-</footer>
 
-<script src='./js/jquery-3.6.0.js'></script>
-<script src='./js/slick.min.js'></script>
-<script src='./js/fav.js'></script>
-<script src='./js/script.js'></script>
+    <section id="portfolio" class="section portfolio">
+      <div class="container section-container">
+        <h3 class="section__title">Мои работы</h3>
 
-</body>
+        <div class="section__content">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-card card glass">
+                  <di class="portfolio-card__header">
+                    <h4>Верстка лэндинг-сайта</h4>
+                    <p>Адаптивный лэндинг-сайт</p>
+                  </di>
+
+                  <img src="./assets/appSon.png" alt="" />
+
+                  <div class="portfolio-card__buttons">
+                    <a
+                      href="https://euge-huge.github.io/appSon/"
+                      target="_blank"
+                      class="button button_small"
+                    >
+                      Ссылка на код
+                    </a>
+
+                    <a
+                      href="https://github.com/euge-huge/smartworld_task1"
+                      target="_blank"
+                      class="button button_small"
+                      >Перейти на сайт
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-card card glass">
+                  <di class="portfolio-card__header">
+                    <h4>Приложения для кругосветного путешественника</h4>
+                    <p>
+                      Приложение для отслеживания маршрута кругосветного
+                      путешественника с его личным дневником
+                    </p>
+                  </di>
+
+                  <img src="./assets/ww-trip.PNG" alt="ww-trip" />
+
+                  <div class="portfolio-card__buttons">
+                    <a
+                      href="http://gps.sibtraveler.com/"
+                      target="_blank"
+                      class="button button_small"
+                      >Перейти на сайт
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-card card glass">
+                  <di class="portfolio-card__header">
+                    <h4>Лабораторные работы</h4>
+                    <p>Лабароторные работы по веб-разработке</p>
+                  </di>
+
+                  <img src="./assets/labs.png" alt="" />
+
+                  <div class="portfolio-card__buttons">
+                    <a
+                      href="https://github.com/euge-huge/web-tpu"
+                      target="_blank"
+                      class="button button_small"
+                    >
+                      Ссылка на код
+                    </a>
+
+                    <a
+                      href="https://euge-huge.github.io/web-tpu/index.html"
+                      target="_blank"
+                      class="button button_small"
+                      >Перейти на сайт
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-card card glass">
+                  <di class="portfolio-card__header">
+                    <h4>Населенные пункты</h4>
+                    <p>
+                      Простое тестовое задание с различным функционалом таблиц
+                    </p>
+                  </di>
+
+                  <img src="./assets/lama.png" alt="" />
+
+                  <div class="portfolio-card__buttons">
+                    <a
+                      href="https://github.com/euge-huge/lama-demo"
+                      target="_blank"
+                      class="button button_small"
+                    >
+                      Ссылка на код
+                    </a>
+
+                    <a
+                      href="https://lama-demo.web.app/"
+                      target="_blank"
+                      class="button button_small"
+                      >Перейти на сайт
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <a href="https://github.com/euge-huge" target="_blank" class="button">
+            <img
+              class="button__icon"
+              src="./assets/github-mark.svg"
+              alt="github-mark"
+            />
+
+            Смотреть больше на GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax">
+      Технологические решения с акцентом на профессионализм
+    </div>
+
+    <section id="contacts" class="section contacts">
+      <div class="container section-container">
+        <div id="particles-js3" class="particles"></div>
+
+        <h3 class="section__title">Связаться</h3>
+
+        <div class="section__content">
+          <div class="card glass">
+            <form action="#" class="contacts-form">
+              <div>
+                <label for="email" class="form-label">Введите email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+
+              <div>
+                <label for="problem" class="form-label"
+                  >Опишите свою проблему подробнее:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="problem"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button button_small">
+                Отправить
+              </button>
+            </form>
+          </div>
+
+          <!-- <button class="button">Связаться</button> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__message">
+            <h3>Портфолио</h3>
+
+            <p>Спасибо, что посетили мой личный сайт-портфолио.</p>
+
+            <p>Свяжитесь со мной, чтобы создавать вместе 🚀</p>
+          </div>
+
+          <div>
+            <h3>Навигация</h3>
+
+            <nav class="menu">
+              <div class="menu__item">
+                <a href="#about">Обо мне</a>
+              </div>
+              <div class="menu__item">
+                <a href="#skills">Навыки</a>
+              </div>
+              <div class="menu__item">
+                <a href="#portfolio">Мои работы</a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer-top-contacts">
+            <h3>Контакты</h3>
+
+            <div class="footer-top-contacts__item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>I'm based in Tomsk, Russia.</div>
+            </div>
+
+            <div class="footer-top-contacts__item">
+              <i class="bi bi-envelope-fill"></i>
+              <div>evgeniy0ctreles@gmail.com</div>
+            </div>
+
+            <div class="footer-top-contacts__item">
+              <i class="bi bi-telephone-fill"></i>
+              <div>+7 (923) XXX-XX-XX</div>
+            </div>
+
+            <div class="footer-top-contacts__medias">
+              <a
+                class="footer-top-contacts__medias-item"
+                target="_blank"
+                href="https://www.facebook.com/eugbys/"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="footer-top-contacts__medias-item"
+                target="_blank"
+                href="https://www.instagram.com/bystrovoff/"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                class="footer-top-contacts__medias-item"
+                target="_blank"
+                href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE%D0%B2-686975217/"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">Разработано с ❤️ Евгением Быстровым</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/particles.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+  </body>
 </html>
