@@ -20,7 +20,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const config = {
+const particlesConfig = {
   particles: {
     number: {
       value: 80,
@@ -127,7 +127,7 @@ const config = {
     },
   },
   retina_detect: true,
-  config_demo: {
+  particlesConfig_demo: {
     hide_card: false,
     background_color: "#000000",
     background_image: "",
@@ -137,5 +137,5 @@ const config = {
   },
 };
 
-particlesJS("particles-js", config);
-particlesJS("particles-js3", config);
+particlesJS("particles-js", particlesConfig);
+particlesJS("particles-js2", particlesConfig);
