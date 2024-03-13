@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico" />
 
-    <title>Евгений Быстров – Креативный Frontend Разработчик</title>
+    <title>Евгений Быстров – Креативный Frontend-разработчик</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,18 +40,23 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/medias.css" />
   </head>
   <body>
-    <nav class="menu glass">
-      <div class="menu__item">
-        <a href="#about">Обо мне</a>
-      </div>
-      <div class="menu__item">
-        <a href="#skills">Навыки</a>
-      </div>
-      <div class="menu__item">
-        <a href="#portfolio">Мои работы</a>
-      </div>
+    <i id="burger" class="burger bi bi-list glass"></i>
+
+    <nav id="menu" class="menu glass menu_active">
+      <ul>
+        <li class="menu__item">
+          <a href="#about">Обо мне</a>
+        </li>
+        <li class="menu__item">
+          <a href="#skills">Навыки</a>
+        </li>
+        <li class="menu__item">
+          <a href="#portfolio">Мои работы</a>
+        </li>
+      </ul>
     </nav>
 
     <header id="header" class="header">
@@ -59,7 +64,7 @@
 
       <div class="header__title">
         <h1>Евгений Быстров</h1>
-        <h2>Креативный Frontend Разработчик</h2>
+        <h2>Креативный Frontend-разработчик</h2>
 
         <a href="#contacts" class="button button_small">Связаться</a>
       </div>
@@ -392,8 +397,6 @@
               </button>
             </form>
           </div>
-
-          <!-- <button class="button">Связаться</button> -->
         </div>
       </div>
     </section>

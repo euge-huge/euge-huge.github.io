@@ -1,0 +1,127 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 60px 24px;
+  }
+
+  .footer-top {
+    padding: 0 24px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .parallax {
+    height: 200px;
+
+    font-size: 26px;
+  }
+
+  .header__title {
+    padding: 0 32px;
+  }
+
+  .header__title h1 {
+    font-size: 48px;
+  }
+
+  .header__title h2 {
+    font-size: 28px;
+  }
+
+  .about .section__content {
+    flex-direction: column;
+    gap: 24px 0;
+  }
+
+  .about img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .skills .section__content {
+    flex-direction: column;
+    gap: 24px 0;
+  }
+
+  .skills .card {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .portfolio-card img {
+    height: 350px;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .portfolio-card__buttons {
+    flex-direction: column;
+    gap: 12px 0;
+  }
+
+  .portfolio-card__buttons .button {
+    width: 100%;
+  }
+
+  .contacts .card {
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 24px 0;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .burger {
+    z-index: 3;
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    padding: 12px;
+    display: block;
+
+    line-height: 40px;
+    font-size: 40px;
+  }
+
+  .menu {
+    top: 0;
+    right: 0;
+    left: unset;
+    padding: 16px 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    font-size: 24px;
+  }
+
+  .menu_active {
+    transform: translateY(0%);
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}

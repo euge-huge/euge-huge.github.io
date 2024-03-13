@@ -139,3 +139,10 @@ const particlesConfig = {
 
 particlesJS("particles-js", particlesConfig);
 particlesJS("particles-js2", particlesConfig);
+
+let menuBurger = document.querySelector("#burger");
+let menu = document.querySelector("#menu");
+
+menuBurger.addEventListener("click", () => {
+  menu.classList.toggle("menu_active");
+});
